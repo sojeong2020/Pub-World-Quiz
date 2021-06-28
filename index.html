@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Quiz</title>
+    <link href="index.css" rel="stylesheet" />
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <h1>World Quiz!!</h1>
+
+    <section>
+      <h2>1. What country has the most islands in the world?</h2>
+      <button id='country' onclick="addCountry('Sweden'); this.onclick=null;">Sweden</button>
+      <button id='country' onclick="addCountry('Canada'); this.onclick=null;">Canada</button>
+      <button id='country' onclick="addCountry('South Korea'); this.onclick=null;">South Korea</button>
+      <button id='country' onclick="addCountry('Cuba'); this.onclick=null;">Cuba</button>
+
+      <p id='answer'></p>   
+
+    </section>
+    <section>
+      <h2>2. What’s the smallest country in the world?</h2>
+      <button id='countryS' onclick="addSCountry('Costa Rica'); this.onclick=null;">Costa Rica</button>
+      <button id='countryS' onclick="addSCountry('Cyprus'); this.onclick=null;">Cyprus</button>
+      <button id='countryS' onclick="addSCountry('Fiji'); this.onclick=null;">Fiji</button>
+      <button id='countryS' onclick="addSCountry('The Vatican'); this.onclick=null;">The Vatican</button>
+
+      <p id='answer_2'></p> 
+
+    </section>
+
+   
+
+<section>
+
+<button onclick="myScore()">total score</button>
+
+<p id="demo"></p>
+
+</section> 
+
+    
+</body>
+</html>
