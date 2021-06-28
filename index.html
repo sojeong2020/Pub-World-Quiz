@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Quiz</title>
+    <title>Pub World Quiz</title>
     <link href="index.css" rel="stylesheet" />
     <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h1>World Quiz!!</h1>
+  <div class ="container">
+    <div class="centered">Pub World Quiz</div>
+    <img src="https://images.unsplash.com/photo-1498354178607-a79df2916198?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" style="width:100%;">
+  </div>
 
-    <section>
+    <section class="second">
       <h2>1. What country has the most islands in the world?</h2>
       <button id='country' onclick="addCountry('Sweden'); this.onclick=null;">Sweden</button>
       <button id='country' onclick="addCountry('Canada'); this.onclick=null;">Canada</button>
@@ -21,7 +28,7 @@
       <p id='answer'></p>   
 
     </section>
-    <section>
+    <section class="third">
       <h2>2. What’s the smallest country in the world?</h2>
       <button id='countryS' onclick="addSCountry('Costa Rica'); this.onclick=null;">Costa Rica</button>
       <button id='countryS' onclick="addSCountry('Cyprus'); this.onclick=null;">Cyprus</button>
@@ -31,7 +38,7 @@
       <p id='answer_2'></p> 
 
     </section>
-    <section>
+    <section class="fourth">
       <h2>3. What’s the capital of Canada?</h2>
       <button id='countryC' onclick="addCCountry('Berlin'); this.onclick=null;">Berlin</button>
       <button id='countryC' onclick="addCCountry('Ottawa'); this.onclick=null;">Ottawa</button>
@@ -41,7 +48,7 @@
       <p id='answer_3'></p> 
 
     </section>
-    <section>
+    <section class="fifth">
       <h2>4. Name the largest (not highest) mountain range in the world? </h2>
       <button id='countryL' onclick="addLCountry('Himalayas'); this.onclick=null;">Himalayas</button>
       <button id='countryL' onclick="addLCountry('Karakoram'); this.onclick=null;">Karakoram</button>
@@ -52,7 +59,7 @@
 
     </section>
 
-    <section>
+    <section class="sixth">
       <h2>5. Where is the lowest natural place on planet Earth? </h2>
       <button id='countryLP' onclick="addLPCountry('Lake Assal'); this.onclick=null;">Lake Assal</button>
       <button id='countryLP' onclick="addLPCountry('Kuttanad'); this.onclick=null;">Kuttanad</button>
@@ -71,7 +78,7 @@
 
 <section>
 
-<button onclick="myScore()">total score</button>
+<button id="scorebutton" onclick="myScore()">total score</button>
 
 <p id="demo"></p>
 
